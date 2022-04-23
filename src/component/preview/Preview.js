@@ -1,9 +1,9 @@
 import './preview.css';
 
-const Preview = ({image}) => {
+const Preview = ({ defaultImage }) => {
     return(
         <div className="preview">
-            <img src={image} alt="preview"/>
+            <img src={ defaultImage } alt="preview"/>
         </div>
     )
 }

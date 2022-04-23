@@ -1,10 +1,10 @@
 import './imginput.css';
 
-const ImageInput = () => {
+const ImageInput = ({ changeImge }) => {
     return(
         <div className='img-Input'>
-            <label htmlFor='img'>Select Image</label>
-            <input id='img' type='file' />
+            <label className='img-Input-btn' htmlFor='img'>Select Image</label>
+            <input style={{display: "none"}} onChange={ changeImge } id='img' type='file' />
         </div>
     )
 }

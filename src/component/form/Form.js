@@ -2,11 +2,11 @@ import './form.css';
 import Button from '../button/Button'
 import ImageInput from '../imgInput/ImageInput'
 
-const Form = () => {
+const Form = ({ changeImge, handleSubmit }) => {
     return(
-        <form className='img-form'>
-            <ImageInput />
-            <Button />
+        <form onSubmit={ handleSubmit } className='img-form'>
+            <ImageInput changeImge={ changeImge }/>
+            <Button  value={'Compress'}/>
         </form>
     )
 }

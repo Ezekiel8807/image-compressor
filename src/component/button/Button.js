@@ -2,7 +2,10 @@ import './button.css';
 
 const Button = ({ value }) => {
     return(
-        <input type='submit' value={ value } />
+        <div className='compress'>
+            <input className='compress-btn' type='submit' value={ value } />
+        </div>
+        
     )
 }
 

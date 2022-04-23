@@ -1,17 +1,14 @@
 import './body.css';
-import { useState } from 'react';
 import Preview from '../preview/Preview';
 import Form from '../form/Form';
 
 
-const Body = () => {
-    
-    const [image ] = useState('/asset/img/R.png');
+const Body = ({ defaultImage, changeImge, handleSubmit }) => {
 
     return(
         <div className="mainBody">
-            <Preview image={ image } />
-            <Form />
+            <Preview  defaultImage={ defaultImage } />
+            <Form changeImge={ changeImge}  handleSubmit={ handleSubmit }/>
         </div>
     )
 }
