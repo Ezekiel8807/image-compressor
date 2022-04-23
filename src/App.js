@@ -25,6 +25,7 @@ function App() {
       alert('select your image')
     }else{
       alert("submitted");
+      alert('done');
     }
   }
 
