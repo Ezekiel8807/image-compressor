@@ -1,2 +1,1 @@
-# Getting Started with Create React App
-
+# Image compressor project with react
